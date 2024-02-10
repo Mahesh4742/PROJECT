@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Government Polytechnic, Channasandra, Whitefield, Bangalore</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='maincss.css') }}">
+
+</head>
+
+<body>
+    
+    <header >
+        <h1>Welcome to Government Polytechnic</h1>
+        <p>Channasandra, Whitefield, Bangalore</p>
+    </header>
+    <body>
+        
+            <nav>
+                <a href="about.html">About Us</a>
+                <a href="courses.html">Courses</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="index.html"> Gallery </a>
+            </nav>
+
+    <div id="main-content">
+        <div id="left-content">
+            <div id="introduction-section">
+                <h2>Discover Our Diverse Courses</h2>
+                <p>
+                    Government Polytechnic, Channasandra, offers a range of high-quality technical courses, providing students with opportunities to excel in various fields. Our diverse courses cater to different interests and career paths.
+                </p>
+                <p>
+                    Choose from a variety of engineering disciplines, including:
+                </p>
+                    <style>
+                    /* Your existing styles... */
+            
+                    #introduction-section ul {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+            
+                    #introduction-section ul li:nth-child(odd) {
+                        background-color: #f0f0f0; /* Set the background color for odd items */
+                        color: #333; /* Set the font color for odd items */
+                    }
+            
+                    #introduction-section ul li:nth-child(even) {
+                        background-color: #e0e0e0; /* Set the background color for even items */
+                        color: #555; /* Set the font color for even items */
+                    }
+                </style>
+              
+
+                <ul>
+                    <li>Computer Science Engineering (CSE)</li>
+                    <li>Electronics and Communication Engineering (EC)</li>
+                    <li>Civil Engineering</li>
+                    <li>Mechanical Engineering</li>
+                </ul>
+                <p>
+                    Join us and embark on a journey of knowledge, innovation, and success. Government Polytechnic is committed to providing a great learning environment for everyone.
+                </p>
+            </div>
+
+            <h2>About Us</h2>
+            <p style="color: #454c51;">
+                Government Polytechnic, Channasandra, located in the vibrant area of Whitefield, Bangalore, is dedicated to providing high-quality technical education. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec quam justo.
+                Sed auctor accumsan massa, eget tempus elit ultrices in.
+                Suspendisse in elit a urna lobortis fringilla. Integer vitae eros eget elit
+                tristique dapibus a vel metus.
+            </p>
+        </div>
+
+        <div id="right-content">
+            <div id="chatbot-container">
+                <h2>College ChatBot Service </h2>
+                <div id="chat-display"></div>
+                <input type="text" id="user-input" placeholder="Ask me about admissions, courses, events, etc.">
+                <button id="send-button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='mainjs.js') }}"></script>
+    <footer>
+    <p>&copy; 2024 Your College. All rights reserved.</p>
+</footer>
+</body>
+
+</html>
