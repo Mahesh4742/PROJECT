@@ -1,32 +1,201 @@
-<!-- content for courses.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses - College Website</title>
-    <link rel="stylesheet" href="stylesheet.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Courses</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url("https://wallpapers.com/images/hd/college-background-ysato0s3a3wf93xl.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding-top: 120px; /* Increased padding to accommodate the fixed header */
+    }
+
+    header {
+        background: rgba(89, 69, 204, 0.685);
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        position: fixed; /* Set the header position to fixed */
+        top: 0; /* Position it at the top of the viewport */
+        z-index: 1000; /* Ensure the header stays on top of other content */
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+        padding: 0.5em;
+        width: 100%;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-item {
+        margin: 20px;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .gallery-item img:hover {
+        transform: scale(1.1);
+    }
+
+    section {
+        background-color: #000000; /* Set the background color to black */
+        color: #ffffff; /* Set the text color to white for contrast */
+        font-family: Arial, sans-serif; /* Choose a readable font */
+        padding: 20px; /* Add some padding for spacing */
+        text-align: center;
+        margin-top: 20px; /* Adjusted margin to leave space below the fixed header */
+    }
+
+    /* Set unordered list to left alignment */
+    section ul {
+        text-align: left;
+    }
+    
+    /* Underline h2 and 'Program Highlights' */
+    section h2, section p b {
+        text-decoration: underline;
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our College</h1>
-        <nav>
-            <a href="MainPG.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="admissions.html">Admissions</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="index.html"> Gallery </a>
-        </nav>
-    </header>
 
-    <section>
-        <h2>Our Courses</h2>
-        <p>Explore our diverse range of courses designed to meet the needs of our students...</p>
-        <p>From arts and sciences to technology and business, we have something for everyone.</p>
-    </section>
+<header>
+    <h1>Government Polytechnic Channasandra - Courses</h1>
+    <nav>
+        <a href="MainPG.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="MAIN GAL.html">Gallery</a>
+    </nav>
+</header>
 
-    <footer>
-        <p>&copy; 2024 Your College. All rights reserved.</p>
-    </footer>
+<section>
+    <h2>Diploma in Computer Science Engineering</h2>
+    <p>Diploma in Computer Engineering is a Diploma level Computer Engineering course. This is a technical degree below the undergraduate rank which aims to provide students with some basic knowledge of engineering, science, computing, mathematical techniques, a sound knowledge of English to communicate in the job field and the ability to apply the basic problem-solving techniques. Its duration is 3 to 4 years. Computer Science is an interdisciplinary field, both in its origin and application. Computer Science plays an important role in virtually all fields, including science, medicine, music, art, business, law, and communication.</p>
+
+    <table>
+        <tr>
+            <td><img src="C:\Users\bharath\OneDrive\Desktop\Decoy\Images\csmain.jpg" style="width:300px;height:120px;"></td>
+            <td>
+                <p><b>Program Highlights</b></p>
+                <ul>
+                    <li>Curriculum alignment with industrial certifications such as CCNA, CompTIA Cloud Essentials, CCNA Security CompTIA Security+, CCNA Cyber Ops to enhance your career prospects.</li>
+                    <li>Choose from one of the many specializations offered that include Cloud Computing; Data Science; Cybersecurity; AI & ML or any other specialization as offered at the Polytechnic you have enrolled.</li>
+                    <li>Change your specialization by re-enrolling into the final year of the Diploma programme, if you are not happy with the kind of job in profile the specialization you have completed.</li>
+                    <li>16 week enhanced internship programme at reputable companies to deepen your skills and provide you with exposure to real world projects.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Diploma in Electronics & Communication Engineering</h2>
+    <p>Diploma in Electronics and Communication Engineering is a Diploma level Electronics and Communication Engineering course. The focus in this discipline is on understanding electronic networks and devices, electric magnetic fields, computer fundamentals, communication and control systems. Electronics and Communication Engineering uses the scientific knowledge of the behavior and effects of electronics to develop components, devices, systems and equipment. It deals with recent trends in communication technology via wire/wireless networks, circuit designs and Microcontrollers. After passing the course students have wide job opportunities in various fields including further study options.</p>
+
+    <table>
+        <tr>
+            <td><img src="C:\Users\bharath\OneDrive\Desktop\Decoy\Images\ecmain.jpg" style="width:300px;height:150px;"></td>
+            <td>
+                <p><b>Program Highlights</b></p>
+                <ul>
+                    <li>Today’s highly-automated workplace has elevated productivity to new levels. Advanced systems are anchored by an array of electrical and electronic equipment.</li>
+                    <li>Choose from one of the many specializations offered that include IoT, VLSI and Embedded System, PCB Design & Fabrication, Medical Electronics or any other specialization as offered by the Polytechnics you have enrolled.</li>
+                    <li>You learn how to set up, maintain, and troubleshoot various electronic equipment available in your institution. Working with systems, you can develop electronics, mechanics, and networking skills by solving problems together.</li>
+                    <li>16 week enhanced internship programme at reputable companies to deepen your skills and provide you with exposure to real world projects.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Diploma in Civil Engineering</h2>
+    <p>
+        Diploma in Civil Engineering is a Diploma level course. Civil Engineering deals with the design, construction and maintenance of the physical and naturally built environment, including works like roads, bridges, canals, dams and buildings. During the study, the student is exposed to various subjects of Civil Engineering such as planning, drafting (both manual and computer-aided), surveying, estimation & costing, construction technology, basics of the highway, railway, bridge, airport, tunnel and harbour engineering. the course also offers adequate exposure to reinforced concrete structures, quality control, material testing, construction management & entrepreneurship, professional practice and office procedures. Students also get a feel for an extensive survey, building drawing, irrigation & bridge drawing and structural engineering drawing.
+    </p>
+
+    <table>
+        <tr>
+            <td><img src="C:\Users\bharath\OneDrive\Desktop\Decoy\Images\cemain.jpg" style="width:250px;height:175px;"></td>
+            <td>
+                <p><b>Program Highlights</b></p>
+                <ul>
+                    <li>The new C20 Curriculum prepares to be life-ready, work-ready and world-ready. It equips you with skillsets that are aligned with the Construction Industry.
+                    </li>
+                    <li>Choose one of the many specialisations offered that include Structural Engineering; Sustainable Built Environment; Infrastructure Engineering; Net zero Buildings or any other specialisation as offered by the Polytechnic you have enrolled.
+                    </li>
+                    <li>Change your specialisation by re-enrolling into the final year of the Diploma programme, if you are not happy with the kind of job profile in the specialisation you have completed.
+                    </li>
+                    <li>16 weeks Internship Programme in the area of specialisation at reputable organisations where you not just apply your classroom learning to real projects but also learn and develop professional skills needed to be absorbed into employment.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Diploma in Mechanical Engineering</h2>
+    <p>
+        Diploma in Mechanical Engineering is a twelfth level Diploma course which deals with the field of engineering. Mechanical engineering is a discipline of engineering that applies the principles of physics and materials science for analysis, design, manufacturing, and maintenance of mechanical systems. Diploma in Mechanical Engineering seeks to provide more accessible and quality education and training to manufacturing or production personnel to meet the real work needs of the manufacturing or production industry and prepare them for the changes in techniques, technologies, markets and employment patterns. This Diploma is equivalent to Diploma offered by the Technical Education System and is equivalent to any of the similar diplomas offered by and other university/polytechnic in India. The minimum time duration is three years and the maximum is six years.
+    </p>
+
+    <table>
+        <tr>
+            <td><img src="C:\Users\bharath\OneDrive\Desktop\Decoy\Images\MEMAINS.jpg" style="width:250px;height:175px;"></td>
+            <td>
+                <p><b>Program Highlights</b></p>
+                <ul>
+                    <li>Mechanical Engineering is the core of most engineering courses. You will get to apply your knowledge and skills to almost every other engineering discipline easily.
+                    </li>
+                    <li>Choose your career pathway of becoming an employee, a researcher or an employer. In the employment pathway, develop depth of knowledge in one of the following 4 (four) specialisations; Automation & Robotics, Advanced Manufacturing, e-Mobility and Applied Thermal Engineering. This will be followed by industry exposure through a structured 16 weeks internships or an industry project in the specialised subject area.
+                    </li>
+                    <li>You will gain advanced standing in mechanical engineering degrees at local universities and overseas higher education institutions.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <p>&copy; 2024 Your College. All rights reserved.</p>
+</footer>
+<footer>
+    CogniCrafters.AI
+    
+</footer>
 </body>
 </html>

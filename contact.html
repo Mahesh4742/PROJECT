@@ -1,13 +1,121 @@
 <!-- content for contact.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - College Website</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <title>Government Polytechnic, Channasandra, Whitefield, Bangalore</title>
+        
+        <style>
+            /* General styles */
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: url("https://wallpapers.com/images/hd/college-background-ysato0s3a3wf93xl.jpg") no-repeat center center fixed;
+                background-size: cover;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin-top: 80px; /* Adjust this value to match the height of your fixed header */
+            }
 
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
+             section {
+                background-color: #000000; /* Set the background color to black */
+                color: #ffffff; /* Set the text color to white for contrast */
+                font-family: Arial, sans-serif; /* Choose a readable font */
+                padding: 20px; /* Add some padding for spacing */
+                margin-top: 200px;
+                text-align: center;
+             }
+
+            header {
+                position: fixed;
+                top: 0%;
+                background: rgba(0, 111, 113, 0.562);
+                color: #ffffff;
+                padding: 20px;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            
+    
+            nav {
+                display: flex;
+                justify-content: space-around;
+                background-color: #000000;
+                padding: 0.5em;
+                width: 100%;
+            }
+            
+            nav a {
+                color: white;
+                text-decoration: none;
+            }
+
+            table {
+            border-collapse: collapse; /* Collapse border spacing */
+            margin: 0 auto; /* Center the table */
+            border: 2px solid #00e1ff; /* Set border color */
+        }
+        th, td {
+            border: 1px solid #00e1ff; /* Set border color for table cells */
+            padding: 8px; /* Add padding for better spacing */
+            text-align: left; /* Align text to the left */
+        }
+    
+    #left-content {
+        flex: 1;
+        padding-right: 20px;
+    }
+    
+    #right-content {
+        flex: 1;
+        max-width: 300px;
+        margin-left: 20px;
+    }
+    #chatbot-container {
+            background: linear-gradient(90deg, #000000, #000000);
+            color: #ffffff;
+            padding: 50px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            display: none; /* Initially hidden */
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            width: 300px; /* Adjust width as needed */
+            z-index: 9998; /* Ensure the chatbot container stays above other content */
+        }
+
+        #toggle-chatbot {
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999; /* Ensure the button stays on top of other content */
+        }
+    /* Footer styles */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 1em;
+        text-align: center;
+    }
+    
+        </style>
+    </head>
 <body>
     <header>
         <h1>Welcome to Our College</h1>
@@ -16,7 +124,7 @@
             <a href="about.html">About Us</a>
             <a href="courses.html">Courses</a>
             <a href="admissions.html">Admissions</a>
-            <a href="index.html"> Gallery </a>
+            <a href="MAIN GAL.html"> Gallery </a>
         </nav>
     </header>
 

@@ -1,21 +1,140 @@
 <!-- content for admissions.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Admissions - College Website</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <title>Government Polytechnic, Channasandra, Whitefield, Bangalore</title>
+        
+        <style>
+            /* General styles */
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: url("https://wallpapers.com/images/hd/college-background-ysato0s3a3wf93xl.jpg") no-repeat center center fixed;
+                background-size: cover;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin-top: 80px; /* Adjust this value to match the height of your fixed header */
+            }
+
+             section {
+                background-color: #000000; /* Set the background color to black */
+                color: #ffffff; /* Set the text color to white for contrast */
+                font-family: Arial, sans-serif; /* Choose a readable font */
+                padding: 20px; /* Add some padding for spacing */
+                margin-top: 200px;
+                text-align: center;
+             }
+
+            header {
+                position: fixed;
+                top: 0%;
+                background: rgba(204, 0, 0, 0.562);
+                color: #ffffff;
+                padding: 20px;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            
     
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
+            nav {
+                display: flex;
+                justify-content: space-around;
+                background-color: #000000;
+                padding: 0.5em;
+                width: 100%;
+            }
+            
+            nav a {
+                color: white;
+                text-decoration: none;
+            }
+
+            table {
+            border-collapse: collapse; /* Collapse border spacing */
+            margin: 0 auto; /* Center the table */
+            border: 2px solid #00e1ff; /* Set border color */
+        }
+        th, td {
+            border: 1px solid #00e1ff; /* Set border color for table cells */
+            padding: 8px; /* Add padding for better spacing */
+            text-align: left; /* Align text to the left */
+        }
+    
+    #left-content {
+        flex: 1;
+        padding-right: 20px;
+    }
+    
+    #right-content {
+        flex: 1;
+        max-width: 300px;
+        margin-left: 20px;
+    }
+    table {
+            border-collapse: collapse; /* Collapse border spacing */
+            margin: 0 auto; /* Center the table */
+            border: 2px solid #00e1ff; /* Set border color */
+        }
+        th, td {
+            border: 1px solid #00e1ff; /* Set border color for table cells */
+            padding: 8px; /* Add padding for better spacing */
+            text-align: left; /* Align text to the left */
+        }
+    #chatbot-container {
+            background: linear-gradient(90deg, #000000, #000000);
+            color: #ffffff;
+            padding: 50px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            display: none; /* Initially hidden */
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            width: 300px; /* Adjust width as needed */
+            z-index: 9998; /* Ensure the chatbot container stays above other content */
+        }
+
+        #toggle-chatbot {
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999; /* Ensure the button stays on top of other content */
+        }
+    /* Footer styles */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 1em;
+        text-align: center;
+    }
+    
+        </style>
+    </head>
 <body>
     <header>
-        <h1>Welcome to Our College</h1>
+        <h1>Government Polytechnic Channasandra- Admissions Information</h1>
         <nav>
             <a href="MainPG.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="courses.html">Courses</a>
             <a href="contact.html">Contact Us</a>
-            <a href="index.html"> Gallery </a>
+            <a href="MAIN GAL.html"> Gallery </a>
         </nav>
     </header>
 
@@ -23,7 +142,45 @@
         <h2>Admissions Information</h2>
         <p>Learn about our admission process, requirements, and important dates...</p>
         <p>We strive to make the application process as smooth as possible for our prospective students.</p>
-    </section>
+        <h2 style="color:#000000"><span style="background-color: rgb(255, 255, 255);"> - About Our College - </span></h2>
+        <p>&#8226; Our institute was established in the year 2009. Our institute is situated in Pattandur Agrahara Gutta Rd, Kadugodi Post-560067 Bangalore. Our institute is rendering 3-year Diploma Program in 4 different Engineering Courses</p>
+       <p>&#8226; Our institute adhere the rules and regulations of <strong> of Collegiate and Technical Education (DCTE) and All India Council for Technical Education (AICTE)</strong>.</p>
+
+ 
+        <p>&#8226; We are a leading institution dedicated to providing quality education...</p>
+        <p>&#8226; Our experienced faculty and state-of-the-art facilities ensure a vibrant learning environment.</p>
+            <p>&#8226;
+                Join us and embark on a journey of knowledge, innovation, and success. Government Polytechnic is committed to providing a great learning environment for everyone.
+            </p>
+            <h2 style="text-decoration: underline;">Courses Offered</h2>
+            <table border="1" style="margin: 0 auto;">
+                <tr style="color: #ad0202;">
+                    <th>SL NO</th>
+                    <th>COURSES OFFERED</th>
+                    <th>ADMISSION INTAKE</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Civil Engineering</td>
+                    <td>45+2[SNQ] = 47</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Computer Science & Engineering</td>
+                    <td>45+3[SNQ] = 48</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Electronics and Communication Engineering</td>
+                    <td>45+2[SNQ] = 47</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mechanical Engineering</td>
+                    <td>45+2[SNQ] = 47</td>
+                </tr>
+            </table>
+        </div>
 
     <footer>
         <p>&copy; 2024 Your College. All rights reserved.</p>
