@@ -254,21 +254,14 @@
                 {
                         "tag": "event",
                         "patterns": [
-                                "events organised",
-                                "list of events",
-                                "list of events organised in college",
-                                "list of events conducted in college",
-                                "What events are conducted in college",
-                                "Are there any event held at college",
-                                "Events?",
-                                "functions",
-                                "what are the events",
-                                "tell me about events",
-                                "what about events"
+                                "events gallery",
+                                "gallery albums",
+                                "events"
+                                
                         ],
-                        "responses": [
-                                "There are a lot of events of which VIBRANCE is the biggest and well celebrated one!!"
-                        ],
+                        "responses": ["To view about Events Gallery albums visit <a target=\"_blank\" href=\"https://gpt.karnataka.gov.in/gptchannasandra/public/gallery/en\"> here</a>"
+                ],
+                                
                         "context_set": ""
                 },
                 {
@@ -464,7 +457,7 @@
                                 "admission process"
                         ],
                         "responses": [
-                                "Application can also be submitted online through the Unversity's  <a target=\"_blank\" href=\"https://gpt.karnataka.gov.in/gptcha  nnasandra/public/22/information-to-admisson/en\">website</a>"
+                                "To know about the admission in GPTC: <a target=\"_blank\" href=\" https://gpt.karnataka.gov.in/gptchannasandra/public/22/information-to-admisson/en\">click here</a>"
                         ],
                         "context_set": ""
                 },
@@ -497,7 +490,7 @@
                                 "seats"
                         ],
                         "responses": [
-                                "The number of Students depends on each branch. In CSE- 47| ECE-47 | Mech-46 | Civil- 46 "
+                                "The number of Students depends on each branch.\n CSE- 47\n ECE-47 \n Mech-46 \n Civil- 46 "
                         ],
                         "context_set": ""
                 },
@@ -562,25 +555,6 @@
                         "responses": [
                                 "please use appropriate language",
                                 "Maintaining decency would be appreciated"
-                        ],
-                        "context_set": ""
-                },
-                {
-                        "tag": "vacation",
-                        "patterns": [
-                                "holidays",
-                                "when will semester starts",
-                                "when will semester end",
-                                "when is the holidays",
-                                "list of holidays",
-                                "about vacations",
-                                "about holidays",
-                                "When is vacation",
-                                "When is holidays",
-                                "how long will be the vacation"
-                        ],
-                        "responses": [
-                                "Please refer academic calendar <a target=\"_blank\" href=\"https:/ GPT.ac.in/sites/default/files/Fall_Semester_2021-22_Academic_Calendar.pdf\">here</a>"
                         ],
                         "context_set": ""
                 },
@@ -817,7 +791,32 @@
                                         "responses": [
                                             "The email address of the Government Polytechnic Channasandra is <a target=\"_blank\" href=\"mailto:polytechnic183@gmail.com\">polytechnic183@gmail.com</a>."
                                         ]
-                                    }
+                                },
+                                {
+                                        "tag": "hod_contact",
+                                        "patterns": [
+                                            "what is the number of hod?",
+                                            "hod contact number",
+                                            "hod number",
+                                            "contact of hod"
+                                        ],
+                                        "responses": [
+                                                "the contact information of all hod and principal:<a target=\"_blank\" href=\"https://gpt.karnataka.gov.in/gptchannasandra/public/2/contact-us/en\">click here</a>"
+                                        ]
+                                },
+                                {
+                                        "tag": "scholarship",
+                                        "patterns": [
+                                               "scholarship link",
+                                               "state scholarship",
+                                               "Diploma scholarship link"
+                                        ],
+                                        "responses": [
+                                                "To know about  syllabus and timetable visit <a target=\"_blank\" href=\"https://ssp.postmatric.karnataka.gov.in/homepage.aspx\"> here</a>"
+                                  ],
+                                        "context_set": ""
+                                }
+
                                           
                                     
                         

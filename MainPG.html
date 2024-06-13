@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Government Polytechnic, Channasandra, Whitefield, Bangalore</title>
-    
     <style>
         /* General styles */
         body {
-                font-family: 'Arial', sans-serif;
-                margin: 0;
-                padding: 0;
-                padding-top: 120px;
-                background: url("https://wallpapers.com/images/hd/college-background-ysato0s3a3wf93xl.jpg") no-repeat center center fixed;
-                background-size: cover;
-                color: #a9a9a935;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                height: 100vh;
-                margin-top: 80px; /* Adjust this value to match the height of your fixed header */
-            }
-
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top: 120px;
+            background: url("https://wallpapers.com/images/hd/college-background-ysato0s3a3wf93xl.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #a9a9a935;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin-top: 80px;
+        }
 
         header {
             position: fixed;
@@ -35,7 +33,7 @@
             margin-bottom: 20px;
         }
 
-        h2{
+        h2 {
             color: #000000;
         }
 
@@ -52,130 +50,150 @@
             text-decoration: none;
         }
 
-/* Main content styles */
-#main-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 200px;
-    padding: 80px;
-    background: linear-gradient(90deg, #ffffff, #f17020d6);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-}
+        /* Main content styles */
+        #main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 200px;
+            padding: 80px;
+            background: linear-gradient(90deg, #ffffff, #f17020d6);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
 
-#left-content {
-    flex: 1;
-    padding-right: 20px;
-}
+        #left-content {
+            flex: 1;
+            padding-right: 20px;
+        }
 
-#right-content {
-    flex: 1;
-    max-width: 300px;
-    margin-left: 20px;
-}
+        #right-content {
+            flex: 1;
+            max-width: 300px;
+            margin-left: 20px;
+        }
 
-/* Chatbot styles */
-#chatbot-container {
-    background: linear-gradient(90deg, #c9851f, #e64e17);
-    color: #000;
-    padding: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
+        /* Chatbot styles */
+        #chatbot-container {
+            background: linear-gradient(90deg, #c9851f, #e64e17);
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
 
-#chat-display {
-    height: 250px;
-    overflow-y: auto;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
+        #chat-display {
+            height: 250px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 
-#user-input {
-    width: calc(100% - 20px);
-    padding: 8px;
-    border: none;
-    border-bottom: 2px solid #fff;
-    margin-bottom: 10px;
-    background-color: transparent;
-    color: #fff;
-    outline: none;
-}
+        #user-input {
+            width: calc(100% - 20px);
+            padding: 8px;
+            border: none;
+            border-bottom: 2px solid #fff;
+            margin-bottom: 10px;
+            background-color: transparent;
+            color: #fff;
+            outline: none;
+        }
 
-#user-input:focus {
-    border-bottom: 2px solid #fff;
-}
+        #user-input:focus {
+            border-bottom: 2px solid #fff;
+        }
 
-#send-button {
-    width: 100%;
-    background: linear-gradient(90deg, #fff, #ecf0f1);
-    color: #d58a3a;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
+        #send-button {
+            width: 100%;
+            background: linear-gradient(90deg, #fff, #ecf0f1);
+            color: #d58a3a;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 
-#send-button:hover {
-    background: linear-gradient(90deg, #ecf0f1, #fff);
-}
+        #send-button:hover {
+            background: linear-gradient(90deg, #ecf0f1, #fff);
+        }
 
-/* Introduction section styles */
-#introduction-section {
-    max-width: 800px;
-    margin: 20px 0;
-}
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
 
-#introduction-section h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+        .chat-button {
+            background: #fff;
+            color: #d58a3a;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
 
-#introduction-section p {
-    color: #555;
-    font-size: 16px;
-    line-height: 1.5;
-}
+        .chat-button:hover {
+            background-color: #ecf0f1;
+        }
 
-#introduction-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+        /* Introduction section styles */
+        #introduction-section {
+            max-width: 800px;
+            margin: 20px 0;
+        }
 
-#introduction-section ul li {
-    color: #333; /* Set the font color for list items */
-}
+        #introduction-section h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
 
-#introduction-section ul li:nth-child(odd) {
-    background-color: #f0f0f0; /* Set the background color for odd items */
-}
+        #introduction-section p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
 
-#introduction-section ul li:nth-child(even) {
-    background-color: #e0e0e0; /* Set the background color for even items */
-}
+        #introduction-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    text-align: center;
-}
+        #introduction-section ul li {
+            color: #333;
+        }
+
+        #introduction-section ul li:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+
+        #introduction-section ul li:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
 
     </style>
 </head>
-
 <body>
     <header>
-        <h1>Welcome to Government Polytechnic</h1>
+        <h1>Welcome to Government Polytechnic Channasandra</h1>
         <nav>
             <a href="about.html">About Us</a>
             <a href="courses.html">Courses</a>
@@ -184,8 +202,6 @@ footer {
             <a href="MAIN GAL.html"> Gallery </a>
         </nav>
     </header>
-    
-    
 
     <div id="main-content">
         <div id="left-content">
@@ -223,6 +239,11 @@ footer {
                 <div id="chat-display"></div>
                 <input type="text" id="user-input" placeholder="Ask me about admissions, courses, events, etc." onkeydown="handleKeyPress(event)">
                 <button id="send-button" onclick="sendMessage()">Send</button>
+                <div class="button-container">
+                    <button class="chat-button" onclick="sendPresetMessage('Hello')">Hello</button>
+                    <button class="chat-button" onclick="sendPresetMessage('How are you?')">How are you?</button>
+                    <button class="chat-button" onclick="sendPresetMessage('Tell me a joke')">Tell me a joke</button>
+                </div>
             </div>
         </div>
     </div>
@@ -234,13 +255,18 @@ footer {
                 sendMessage();
             }
         }
-    </script>
 
-    <footer>
-        <p>&copy; 2024 Your College. All rights reserved.</p>
-    </footer>
-    <footer>
-        CogniCrafters.AI
-    </footer>
-</body>
-</html>
+        function sendMessage() {
+            var userMessage = document.getElementById("user-input").value;
+            if (userMessage.trim() === "") return; // Ignore empty messages
+            displayUserMessage(userMessage);
+            document.getElementById("user-input").value = "";
+            fetch('/get?msg=' + encodeURIComponent(userMessage))
+                .then(response => response.text())
+                .then(data => displayBotMessage(data))
+                .catch(error => console.error('Error:', error));
+        }
+
+        function sendPresetMessage(message) {
+            displayUserMessage(message);
+            fetch('/get?msg='
