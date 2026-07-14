@@ -14,9 +14,9 @@ jobs:
           fetch-depth: 0
           lfs: true
 
-      - name: Sync to Hugging Face
-        uses: huggingface/hub-sync@v0.1.0
-        with:
-          github_repo_id: ${{ github.repository }}
-          huggingface_repo_id: mahesh4742/gptc
-          hf_token: ${{ secrets.HF_TOKEN }}
+      - name: Push to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git remote add hf https://mahesh4742:$HF_TOKEN@huggingface.co/spaces/mahesh4742/gptc
+          git push --force hf main
