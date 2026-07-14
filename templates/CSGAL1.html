@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Events Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("https://wallpapers.com/images/hd/college-background-ysato0s3a3wf93xl.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            background: rgba(0, 111, 113, 0.562);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #000000;
+            padding: 0.5em;
+            width: 100%;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            margin: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Computer Science and Engineering Gallery</h1>
+        <nav>
+            <a href="MainPG.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="index.html"> Gallery </a>
+        </nav>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <a href="cs.html">
+                <img src="C:\Users\bharath\OneDrive\Desktop\Project\CS.jpeg" alt="Computer Science Events">
+            </a>
+        </div>
+
+        <div class="gallery-item">
+            <a href="me.html">
+                <img src="C:\Users\bharath\OneDrive\Desktop\Project\ME.jpg" alt="Mechanical Engineering Events">
+            </a>
+        </div>
+
+        <div class="gallery-item">
+            <a href="ce.html">
+                <img src="C:\Users\bharath\OneDrive\Desktop\Project\CE.jpg" alt="Civil Engineering Events">
+            </a>
+        </div>
+
+        <div class="gallery-item">
+            <a href="ec.html">
+                <img src="C:\Users\bharath\OneDrive\Desktop\Project\EC.jpg" alt="Electrical Engineering Events">
+            </a>
+        </div>
+    </div>
+
+    
+</body>
+</html>

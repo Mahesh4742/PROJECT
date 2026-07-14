@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Contact Us - Government Polytechnic, Channasandra</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/MCSS.css') }}">
+</head>
+<body>
+    <header class="top-header">
+        <h1>Welcome to Our College</h1>
+        <nav>
+            <a href="MainPG.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="MAIN GAL.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="main-container glass-panel">
+        <h2>Contact Information</h2>
+        <p>Have questions or need assistance? Reach out to us using the contact details below...</p>
+        <p style="font-weight: 600; color: var(--text-primary); margin-top: 1rem;">Email: <a href="mailto:polytechnic183@gmail.com">polytechnic183@gmail.com</a></p>
+        <p style="font-weight: 600; color: var(--text-primary);">Phone: 080-29903760</p>
+    </div>
+
+    <!-- Floating Chatbot Widget -->
+    <div id="chatbot-widget">
+        <button id="chat-toggle-btn">💬</button>
+        <div id="chatbot-container">
+            <div class="chat-header">
+                <h2>College ChatBot Service</h2>
+            </div>
+            <div id="chat-display"></div>
+            <div class="preset-buttons">
+                <button onclick="sendPresetMessage('Hello')">Hello</button>
+                <button onclick="sendPresetMessage('Where are you located?')">Where are you located?</button>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Ask about admissions, courses...">
+                <button id="send-button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GPTC. All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/mainjs.js') }}"></script>
+</body>
+</html>

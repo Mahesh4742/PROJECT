@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Home - Government Polytechnic, Channasandra</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/MCSS.css') }}">
+</head>
+<body>
+    <header class="top-header">
+        <h1>Welcome to Government Polytechnic</h1>
+        <p style="margin:0; font-size: 0.9rem; color:var(--text-secondary);">Channasandra, Whitefield, Bangalore</p>
+        <nav style="margin-top: 1rem;">
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="MAIN GAL.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="main-container glass-panel">
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+            <section>
+                <h2>Discover Our Diverse Courses</h2>
+                <p>Government Polytechnic, Channasandra, offers a range of high-quality technical courses, providing students with opportunities to excel in various fields. Our diverse courses cater to different interests and career paths.</p>
+                <ul style="list-style-position: inside; margin-bottom: 1rem; color: var(--text-secondary);">
+                    <li>Computer Science Engineering (CSE)</li>
+                    <li>Electronics and Communication Engineering (EC)</li>
+                    <li>Civil Engineering</li>
+                    <li>Mechanical Engineering</li>
+                </ul>
+                <p>Join us and embark on a journey of knowledge, innovation, and success. Government Polytechnic is committed to providing a great learning environment for everyone.</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Floating Chatbot Widget -->
+    <div id="chatbot-widget">
+        <button id="chat-toggle-btn">💬</button>
+        <div id="chatbot-container">
+            <div class="chat-header">
+                <h2>College ChatBot Service</h2>
+            </div>
+            <div id="chat-display"></div>
+            <div class="preset-buttons">
+                <button onclick="sendPresetMessage('Hello')">Hello</button>
+                <button onclick="sendPresetMessage('How are you?')">How are you?</button>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Ask about admissions, courses...">
+                <button id="send-button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your College. All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/mainjs.js') }}"></script>
+</body>
+</html>

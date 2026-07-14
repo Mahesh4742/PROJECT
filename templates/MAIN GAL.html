@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Events Gallery</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/MCSS.css') }}">
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .gallery-item a {
+            display: block;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <h1>Branch Events Gallery</h1>
+        <nav>
+            <a href="MainPG.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="MAIN GAL.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <h2 style="text-align:center;">Our Events Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item glass-panel" style="padding: 1rem;">
+                <a href="galslides.html">
+                    <img src="{{ url_for('static', filename='images/CS.jpeg') }}" alt="Computer Science Events">
+                </a>
+            </div>
+
+            <div class="gallery-item glass-panel" style="padding: 1rem;">
+                <a href="me.html">
+                    <img src="{{ url_for('static', filename='images/ME.jpg') }}" alt="Mechanical Engineering Events">
+                </a>
+            </div>
+
+            <div class="gallery-item glass-panel" style="padding: 1rem;">
+                <a href="ce.html">
+                    <img src="{{ url_for('static', filename='images/CE.jpg') }}" alt="Civil Engineering Events">
+                </a>
+            </div>
+
+            <div class="gallery-item glass-panel" style="padding: 1rem;">
+                <a href="ec.html">
+                    <img src="{{ url_for('static', filename='images/EC.jpg') }}" alt="Electrical Engineering Events">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Floating Chatbot Widget -->
+    <div id="chatbot-widget">
+        <button id="chat-toggle-btn">💬</button>
+        <div id="chatbot-container">
+            <div class="chat-header">
+                <h2>College ChatBot Service</h2>
+            </div>
+            <div id="chat-display"></div>
+            <div class="preset-buttons">
+                <button onclick="sendPresetMessage('Hello')">Hello</button>
+                <button onclick="sendPresetMessage('Tell me about events')">Tell me about events</button>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Ask about admissions, courses...">
+                <button id="send-button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GPTC. All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/mainjs.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>About Us - Government Polytechnic, Channasandra</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/MCSS.css') }}">
+</head>
+<body>
+    <header class="top-header">
+        <h1>Welcome to Our College</h1>
+        <nav>
+            <a href="MainPG.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="MAIN GAL.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="main-container glass-panel">
+        <h2>About Our College</h2>
+        <p>&bull; Our institute was established in the year 2009. Our institute is situated in Pattandur Agrahara Gutta Rd, Kadugodi Post-560067 Bangalore. Our institute is rendering 3-year Diploma Program in 4 different Engineering Courses</p>
+        <p>&bull; Our institute adhere the rules and regulations of <strong>Collegiate and Technical Education (DCTE) and All India Council for Technical Education (AICTE)</strong>.</p>
+        <p>&bull; We are a leading institution dedicated to providing quality education...</p>
+        <p>&bull; Our experienced faculty and state-of-the-art facilities ensure a vibrant learning environment.</p>
+        <p>&bull; Join us and embark on a journey of knowledge, innovation, and success. Government Polytechnic is committed to providing a great learning environment for everyone.</p>
+
+        <h2 style="margin-top: 2rem;">Courses Offered</h2>
+        <table class="glass-table">
+            <tr>
+                <th>SL NO</th>
+                <th>COURSES OFFERED</th>
+                <th>ADMISSION INTAKE</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Civil Engineering</td>
+                <td>45+2[SNQ] = 47</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Computer Science & Engineering</td>
+                <td>45+3[SNQ] = 48</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Electronics and Communication Engineering</td>
+                <td>45+2[SNQ] = 47</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mechanical Engineering</td>
+                <td>45+2[SNQ] = 47</td>
+            </tr>
+        </table>
+
+        <h2 style="margin-top: 2rem;">Vision</h2> 
+        <p>To build strong learning and leadership in the field of Computer Science &Engg by strengthening fundamentals and facilitators interdisciplinary sustainable study to meet the ever growing needs of the society and industry.</p>
+           
+        <h2>Mission</h2> 
+        <ul style="list-style-position: inside; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+            <li>To educate students in technology competencies by providing professionally committed faculty and staff</li>
+            <li>To inculcate strong ethical values, leadership abilities and experimental capabilities in the minds of students so as to work towards the progress of the society</li>
+            <li>To produce Computer Science graduates who trained in design and implementation of computational systems through competitive curriculum and collaboration with industry and other organizations</li>
+            <li>To develop creative environment capable for interdisciplinary study and skill enhancement</li>
+            <li>Develop spirit of innovation and creativity by establishing centres of excellence in upcoming areas.</li>
+            <li>Provide formal and informal technical education to meet dynamic learning.</li>
+            <li>Build up the bridge between industry and students by imparting knowledge and skills to students.</li>
+            <li>Provide ethical and moral standards to face the challenges of the world</li>
+        </ul>
+    </div>
+
+    <!-- Floating Chatbot Widget -->
+    <div id="chatbot-widget">
+        <button id="chat-toggle-btn">💬</button>
+        <div id="chatbot-container">
+            <div class="chat-header">
+                <h2>College ChatBot Service</h2>
+            </div>
+            <div id="chat-display"></div>
+            <div class="preset-buttons">
+                <button onclick="sendPresetMessage('Hello')">Hello</button>
+                <button onclick="sendPresetMessage('How are you?')">How are you?</button>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Ask about admissions, courses...">
+                <button id="send-button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GPTC / CogniCrafters.AI. All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/mainjs.js') }}"></script>
+</body>
+</html>
